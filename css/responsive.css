@@ -1,0 +1,88 @@
+@media (max-width: 1366px) {
+	.box {
+		width: 90%;
+		height: 300px;
+	}
+	.img-blok {
+		width: 90%;
+	}
+	.link-img-box {
+		width: 100%;
+	}
+	.blue-back {
+		width: 85%;
+	}
+	.hover-img {
+		width: 85%;
+	}
+}
+
+@media (max-width: 991px) {
+	#burger-icon {
+		display: inline-block;
+	}
+	nav.navigation {
+		display: none;
+	}
+	.shadow-img{
+		width:350px; 
+		height:300px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	#burger-icon {
+		width: 120px;
+	}
+	.text1-baner {
+		font-size: 34px;
+	}
+	.text2-baner {
+		font-size: 28px;
+	}
+	.c-form {
+		width: 429px;
+	}
+	form input,textarea{
+		padding-right: 0px;
+		width:400px; 
+	}
+	.contact-form-container{
+		width: 400px;
+	}
+	.footer-text{
+	font-size: 14px;
+	}
+	.footer-img{
+	width: 100px;
+	height: 35px;
+	padding-right: 20px;
+	}
+}
+
+@media (max-width: 575px) {
+	.text1-baner {
+		font-size: 24px;
+	}
+	.text2-baner {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 499px) {
+	.text1-baner {
+		font-size: 4vw;
+	}
+	.text2-baner {
+		font-size: 3vw;
+	}
+	.c-form {
+		width: 329px;
+		transform: translateX(13%);
+	}
+	form input,textarea{
+		width:300px; 
+	}
+	
+}

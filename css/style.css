@@ -1,0 +1,374 @@
+/*Heder*/
+header{
+	height: 110px;
+}
+.logo{
+	width: 160px;
+	height: 30px;
+	float: left;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: 30px;
+}
+/*desktop menu*/
+header .navigation{
+	display: inline-block;
+	float: right;
+	padding-top:40px;
+}
+header .navigation ul{
+	list-style-type: none;
+}
+header .navigation ul li{
+	display: inline-block;
+	padding-right: 30px;
+	
+}
+header .navigation ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+header .navigation ul li a:hover{
+	color:#B8EDF8;
+}
+/*end desktop menu*/
+
+/*burger icon begin*/
+#burger-icon {
+	display: none;
+	float: right;
+	width: 130px;
+	height: 45px;
+	position: relative;
+	top: 45px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+#burger-icon span{
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 30px;
+  background: #b8edf8;
+  border-radius: 9px;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: translateX(100%) rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#burger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#burger-icon span:nth-child(2) {
+  top: 12.5px;
+}
+
+#burger-icon span:nth-child(3) {
+  top: 25px;
+}
+
+#burger-icon.open span:nth-child(1) {
+  top: 12.5px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: translateX(100%)rotate(135deg);
+}
+
+#burger-icon.open span:nth-child(2) {
+	display: none;
+}
+
+#burger-icon.open span:nth-child(3) {
+  top: 12.5px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: translateX(100%)rotate(-135deg);
+}
+/*burger icon end*/
+
+/*burger menu begin*/
+.responsive-menu {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+	background-color: #b8edf8;
+	position: relative;
+	top: 10px;
+	z-index: 1;
+	border: 1px solid transparent;
+	display: none;
+	text-align: center;
+}
+
+.responsive-menu ul {
+	position: relative;
+	top: 127px;
+}
+
+.responsive-menu ul li {
+	margin-bottom: 55px;
+}
+
+.responsive-menu ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.responsive-menu a:hover{
+	color: white;
+}
+
+/*burger menu end*/
+
+/*Heder*/
+/*************************************/
+
+/*Main*/
+
+.img-container {
+    position: relative;
+}
+.cover-image {
+	width: 100%;
+	height: auto;
+}
+.text1-baner {
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left:  50%;
+	-webkit-transform: translate(-50%, -50%); 
+ 	transform: translate(-50%, -50%);
+}
+.text2-baner{
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left:  50%;
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+}
+/*რას ვაკეთებ*/
+.article-container{
+	text-align: center;
+	margin:60px auto;	
+}
+.heading{
+	display: inline-block;
+}
+.heading-underline{
+	border-bottom: 2px solid black;
+	padding-bottom: 10px;
+}
+.box{
+	display: inline-block;
+	height: 300px;
+	width: 270px;
+	border:1px solid #B2B2B2;
+}
+.img-box{
+	padding-top: 30px;
+	height: 75px;
+	width: 50px;
+}
+.poto-line{
+	display: inline-block;
+	border-bottom: 2px solid #B8EDF8;
+	padding-bottom: 10px;
+
+}
+/*ჩემი ნამუშევრები*/
+.img-blok{
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 30px;
+	height: 200px;
+	width: 360px; 
+}
+.link-img-box{
+	height: 200px;
+	width: 360px;
+	border:2px solid #B8EDF8;
+}
+
+.blue-back {
+	background-color: #b8edf8;
+	opacity: 0.8;
+	z-index: 2;
+	display: none;
+	width: 360px;
+	height: 200px;
+	position: absolute;
+}
+.hover-img {
+	width: 360px;
+	height: 200px;	
+	position: absolute;
+	background-image: url('../images/center.svg');
+	background-repeat: no-repeat;
+	background-size: 200px 50px;
+	background-position: center;
+	z-index: 5;
+	display: none;
+}
+.text {
+	font-family: Heading-font;
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	top: 70%;
+	left:  50%;
+	-webkit-transform: translate(-50%, -50%); 
+ 	transform: translate(-50%, -50%);
+ 	display: none;
+ 	z-index: 5;
+}
+
+
+/*ჩემ შესახებ*/
+.article-shadow-container{
+	text-align: center;
+	padding-top: 40px;
+}
+.shadow{
+	background-color: #F1F1F1;
+	padding-bottom: 60px;
+}
+.shadow-space{
+	padding:60px auto;
+}
+.shadow-img{
+	width:370px; 
+	height:330px;
+	box-shadow: 25px 25px #B8EDF8;
+}
+.shadow-container-heding-position{
+	float: left;
+
+}
+.shadow-text{
+	clear: both;
+	text-align: left;
+	font-size: 16px;
+}
+/* კონტაქტი*/
+.article-contact-container{
+	text-align: center;
+}
+.contact-background-color{
+	background-color: #B8EDF8;
+}
+.contact-form-container{
+	width: 555px;
+	margin:0 auto;
+	padding-bottom: 60px;
+}
+.c-form{
+	padding-top: 60px;
+}
+.inp-text-email{
+	height: 35px;
+	padding-left: 25px;
+	background-color: #B8EDF8;
+}
+.inp-textarea{
+	height: 100px;
+	padding-left: 25px;
+	padding-top: 10px;
+	background-color: #B8EDF8;
+}
+form input,textarea{
+	display: block;
+	margin-top: 10px;
+	width: 525px;
+	border:2px solid black;
+}
+.inp-button{
+	width: 80px;
+	height: 30px;
+	background:white;
+	color:#7EC4CE;
+	border:1px solid #7EC4CE;
+	cursor: pointer;
+	float: right;
+}
+.contact-text-botom{
+	float: left;
+	font-size: 18px; 
+	font-family:Text-font;
+}
+
+/*Main*/
+
+/*Footer*/
+.footer-box{
+	height: 95px;
+}
+.footer-background{
+	background-color:#313332;
+	height: 95px;
+}
+.footer-text{
+	font-size: 18px;
+	float:left;
+	color: white;
+	padding-left: 40px;
+	padding-top:40px;
+}
+.footer-img{
+	width: 160px;
+	height: 35px;
+	float:right;
+	padding-right: 40px;
+	padding-top:40px;
+
+}
+/*Footer*/
+
+/*Font*/
+@font-face{
+	font-family:Heading-font;
+	src:url(../Font/bpg-glaho-web-caps-webfont.ttf);
+}
+
+@font-face{
+	font-family:Text-font;
+	src:url(../Font/bpg-nino-mkhedruli-book-webfont.ttf);
+}
+.heading-font{
+	font-family:Heading-font;
+}
+#Text-font{
+	font-family:Text-font;
+}
+/*Font*/
